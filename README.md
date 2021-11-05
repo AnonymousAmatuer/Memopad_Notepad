@@ -8,6 +8,13 @@
 - Rate your experience on it
 - do a lot with it
 - Good for opening code in which html codes are done and executed
+
+
 <p> <b> How do you like it? </b>  You may want to use python compiler for the best possible experience with it </p>
-<h2> Thank you for using this </h2>
+
+# Updates
+<p> Version 2 Memopad Released, Check it now! </p>
+<p> <b> Note </b> You may need to modify the code to also adjust with the new logo. This applies to all the versions of Memopad you are using. </p>
+<p> Thank You </p>
+<h2> Pleased because you're using this software </h2>
 
