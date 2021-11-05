@@ -86,7 +86,7 @@ def Time_Date():  # edit menu Date/Time option
 
 
 def About_Notepad():  # help menu About option
-    label = messagebox.showinfo("About Memopad", "Memopad by - \nGabriel Corporations™")
+    label = messagebox.showinfo("About Memopad", "Memopad by - \nAnonymousAmatuer™")
     label = messagebox.showinfo("About Memopad"," Thank you for using this software")
 
 
