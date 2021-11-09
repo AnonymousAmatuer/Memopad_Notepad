@@ -6,7 +6,7 @@ from tkinter.scrolledtext import ScrolledText
 
 editor = Tk()
 editor.title('Memopad PAD')
-editor.iconbitmap(r'C:\Users\User\Documents\notepad__1__M63_icon.ico')
+editor.iconbitmap(r'C:\Users\User\Downloads\notepad__1__M63_icon.ico') # Where did you store the image icon? You have to write in here.
 editor.resizable(0, 0)
 # creating scrollable notepad window
 pad = ScrolledText(editor, width=160, height=45)
@@ -109,9 +109,11 @@ def future():  # Future updates that will come
 
 padmenu: Menu = Menu(editor)
 editor.configure(menu=padmenu)
+
 # file menu
 fileMenu = Menu(padmenu, tearoff=False)
 padmenu.add_cascade(label='File', menu=fileMenu)
+
 # adding options in file menu
 fileMenu.add_command(label='New pad ', command=New_File)
 fileMenu.add_command(label='Open pad', command=Open_file)
@@ -119,6 +121,7 @@ fileMenu.add_command(label='Save pad', command=Save_FIle)
 fileMenu.add_command(label='Save pad As', command=Save_File_as)
 fileMenu.add_separator()
 fileMenu.add_command(label='Exit memopad', command=Exit_pad)
+
 # edit menu
 editMenu = Menu(padmenu, tearoff=False)
 padmenu.add_cascade(label='Edit', menu=editMenu)
@@ -133,6 +136,7 @@ editMenu.add_separator()
 # help menu
 helpMenu = Menu(padmenu, tearoff=False)
 padmenu.add_cascade(label='Help', menu=helpMenu)
+
 # adding options in help menu
 helpMenu.add_command(label='About Memopad', command=About_Notepad)
 helpMenu.add_command(label="Rate This Pad...", command=Rate_Pad)
