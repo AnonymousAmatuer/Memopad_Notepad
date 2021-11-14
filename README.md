@@ -18,4 +18,4 @@
 <p> I recommend using Version 2 as this is better than the previous version </p>
 <p> Thank You </p>
 <h2> Pleased because you're using this software </h2>
-
+This project is Licensed under MIT license
