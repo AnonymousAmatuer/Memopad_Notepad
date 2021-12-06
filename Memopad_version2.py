@@ -6,7 +6,7 @@ from tkinter.scrolledtext import ScrolledText
 
 editor = Tk()
 editor.title('Memopad PAD')
-editor.iconbitmap(r'C:\Users\User\Downloads\notepad__1__M63_icon.ico') # Where did you store the image icon? You have to write in here.
+editor.iconbitmap(r'C:\Users\User\Downloads\notepad icon.ico') # Where did you store the image icon? You have to write in here.
 editor.resizable(0, 0)
 # creating scrollable notepad window
 pad = ScrolledText(editor, width=160, height=45)
