@@ -15,5 +15,5 @@
 # Updates
 <p> Version 2 Memopad Released, Check it now! </p>
 <p> <b> Note: </b> You may need to modify the code to also adjust with the new logo. This applies to all the versions of Memopad you are using. </p>
-<p> I recommend using Version 2 as this is better than the previous version </p>
+<p> I recommend using Version 3 as this is better than the previous version </p>
 <p> Thank You </p>
