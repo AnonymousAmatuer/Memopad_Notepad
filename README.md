@@ -1,6 +1,6 @@
-# Memopad_Notepad
+# MapPad
 # A Notepad for better experience
-<p> Have you ever wanted a notepad that could open files you normally couldn't open with notepad? Like '.dgs' or '.jfd' or anything like it? If so, Let me introduce you to Memopad</p>
+<p> Have you ever wanted a notepad that could open files you normally couldn't open with notepad? Like '.dgs' or '.jfd' or anything like it? If so, Let me introduce you to Mapad</p>
 <h1> Features </h1>
 - Versatile for file functions
 - Easy to use
