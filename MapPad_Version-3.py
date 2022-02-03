@@ -115,6 +115,10 @@ def Helvet():
 
 def Times():
     pad.config(font=('Times',12))
+                                
+
+def version():
+    label=messagebox.showinfo("Version","You are currently using Version number 3.0 of MapPad")
 
 
 padmenu: Menu = Menu(editor)
@@ -151,6 +155,7 @@ padmenu.add_cascade(label='Help', menu=helpMenu)
 helpMenu.add_command(label='About Memopad', command=About_Notepad)
 helpMenu.add_command(label="Rate This Pad...", command=Rate_Pad)
 helpMenu.add_command(label="Features", command=features)
+helpMenu.add_command(label="Version Memopad", command=version)
 
 # Update Menu
 updatemenu = Menu(padmenu, tearoff=False)
