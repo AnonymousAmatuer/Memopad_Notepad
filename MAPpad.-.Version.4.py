@@ -104,6 +104,8 @@ def features():  # Describes Features
 def updates():  # Describes the Updates in it
     messagebox.showinfo("Memopad Updates",
                         "*Update tab introduced \n* Updates introduced is shown here. \n *Added Fonts tab and removed updates tab \n No more disturbing welcoming messages")
+    messagebox.showinfo("Memopad New Updates",
+                        "* Version Tab now tell which version you are using. \n *Clear option now clears whatever that is on screen. Check the edit menu for clear.")
 
 
 def font_Ink():
