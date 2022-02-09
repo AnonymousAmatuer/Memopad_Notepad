@@ -14,9 +14,12 @@
 
 # Updates
 <p> Version 4 Memopad Released, Check it now! </p>
-<p> <b> Note: </b> You may need to modify the code to also adjust with the new logo. This applies to all the versions of Memopad you are using. </p>
+<p> <b> Note: </b> You may need to modify the code to also adjust with the new icon. This applies to all the versions of Memopad you are using. </p>
 <p> I recommend using Version 4 as this is better than the previous version </p>
 <p> Version 4 now has clear function that clears anything and also a version tab to identify which version you are using </p>
+<p> I now opened the discussions in github. Now you can tell your experince with it there. You can also tell all the bugs you faced </p>
+<p> I also added codeql workflow. </p>
+<p> Plus, I added a wiki where I explain my notepad. Just check it. I will be adding a lot of other things.
 
 <p> Oh I just forgot. If you want to rate my pad, just click on the link below. It will take you to a form you can fill about your experience with Memopad </p>
 
