@@ -115,9 +115,9 @@ def updates():  # Describes the Updates in it
     messagebox.showinfo("Memopad Updates",
                         "*Update tab introduced \n* Updates introduced is shown here. \n *Added Fonts tab and removed updates tab \n No more disturbing welcoming messages")
     messagebox.showinfo("Memopad New Updates",
-                        "* Version Tab now tell which version you are using. \n *Clear option now clears whatever that is on screen. Check the edit menu for clear.")
-
-
+                        "* Version Tab now tell which version you are using. \n *Clear option now clears whatever that is on screen. Check the edit menu for clear. \n *Error Log is now added")
+    
+    
 def font_Ink():
     pad.config(font=('Ink Free', 12))
     pad.pack()
@@ -136,7 +136,7 @@ def Times():
 
 
 def version():
-    messagebox.showinfo("Version", "You are currently using Version number 4.0 of MapPad")
+    messagebox.showinfo("Version", "You are currently using Version number 5.0 of MapPad")
 
 
 padmenu: Menu = Menu(editor)
