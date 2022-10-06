@@ -1,6 +1,6 @@
 # MapPad
 # A Notepad for better experience
-<p> Have you ever wanted a notepad that could open files you normally couldn't open with notepad? Like '.dgs' or '.jfd' or anything like it? If so, Let me introduce you to Mapad</p>
+<p> I hear that you want a notepad which directly opens your code (like html for instance) without needing to do a lot of steps to really open it? If so, let me introduce you to MapPad or MemoPad notepad</p>
 <h1> Features </h1>
 - Versatile for file functions
 - Easy to use
