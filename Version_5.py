@@ -7,9 +7,7 @@ from tkinter.scrolledtext import ScrolledText
 editor = Tk()
 editor.title('Memopad PAD')
 
-# In the above line, where did you store the image icon? You have to write in here.
 editor.resizable(0, 0)
-# creating scrollable notepad window
 pad = ScrolledText(editor, width=160, height=45)
 File = ' '
 
@@ -153,6 +151,7 @@ fileMenu.add_command(label='Save pad', command=Save_FIle)
 fileMenu.add_command(label='Save pad As', command=Save_File_as)
 fileMenu.add_separator()
 fileMenu.add_command(label='Exit memopad', command=Exit_pad)
+fileMenu.add_separator()
 
 # edit menu
 editMenu = Menu(padmenu, tearoff=False)
