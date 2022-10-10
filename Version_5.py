@@ -26,16 +26,17 @@ def Open_file():  # file menu Open option
     fd = filedialog.askopenfile(parent=editor, mode='r')
     t = fd.read()  # t is the text read through filedialog
     try:
-      pad.delete(0.0, END)
-      pad.insert(0.0, t)
-    except:
-      messagebox.showerror(title="ERROR", message= "Not able to open file.")
-      was = date.today()
-      print (was,"   **  NOT ABLE TO OPEN FILE")
-      if messagebox.askretrycancel("Retry Process", "Retry to open the file another time?"):
         pad.delete(0.0, END)
         pad.insert(0.0, t)
-    
+    except:
+        messagebox.showerror(title="ERROR", message="Not able to open file.")
+        was = date.today()
+        print(was, "   **  NOT ABLE TO OPEN FILE")
+        if messagebox.askretrycancel("Retry Process", "Retry to open the file another time?"):
+            pad.delete(0.0, END)
+            pad.insert(0.0, t)
+
+
 
 def Save_FIle():  # file menu Save option
     file = filedialog.asksaveasfile(mode='w', defaultextension='.txt')
@@ -44,9 +45,9 @@ def Save_FIle():  # file menu Save option
     try:
         file.write(data)
     except:
-      was = date.today()
-      print (was,"   **  NOT ABLE TO SAVE FILE")
-      if messagebox.askretrycancel("Retry", "Retry to save file another time?"):
+        was = date.today()
+        print(was, "   **  NOT ABLE TO SAVE FILE")
+        if messagebox.askretrycancel("Retry", "Retry to save file another time?"):
             file.write(data)
 
 
@@ -56,9 +57,9 @@ def Save_File_as():  # file menu Save As option
     try:
         fd.write(t.rstrip())
     except:
-      was = date.today()
-      print (was,"   **  NOT ABLE TO SAVE FILE IN GIVEN FORMAT.")
-      if messagebox.askretrycancel("Retry", "Retry process?"):
+        was = date.today()
+        print(was, "   **  NOT ABLE TO SAVE FILE IN GIVEN FORMAT.")
+        if messagebox.askretrycancel("Retry", "Retry process?"):
             fd.write(t.rstrip())
 
 
@@ -96,33 +97,39 @@ def About_Notepad():  # help menu About option
     messagebox.showinfo("About Memopad", " Thank you for using this software")
 
 
-
 def Rate_Pad():  # lets user to rate the pad
     messagebox.showinfo("Memopad rating", "To rate you experience visit \n http://bitly.ws/hkXG")
-    messagebox.showwarning("Memopad rating","I never store your information until you login with your email account. Sign out before submitting")
+    messagebox.showwarning("Memopad rating",
+                           "I never store your information until you login with your email account. Sign out before submitting")
 
 
 def features():  # Describes Features
     messagebox.showinfo("Memopad features",
-                                "*Lets you to view files and code without converting to txt format \n *Note: Visuals not supported \n*Cut, Copy, Paste functions \n *Date and time feature ")
+                        "*Lets you to view files and code without converting to txt format \n *Note: Visuals not supported \n*Cut, Copy, Paste functions \n *Date and time feature ")
     messagebox.showinfo("New Memopad features", "New Fonts added. More Fonts will be added later.")
-
 
 
 def updates():  # Describes the Updates in it
     messagebox.showinfo("Memopad Updates",
                         "*Update tab introduced \n* Updates introduced is shown here. \n *Added Fonts tab and removed updates tab \n No more disturbing welcoming messages")
     messagebox.showinfo("Memopad New Updates",
-                        "* Version Tab now tell which version you are using. \n *Clear option now clears whatever that is on screen. Check the edit menu for clear. \n *Error Log is now added")
-    
-    
+                        """* Version Tab now tell which version you are using. 
+                        \n *Clear option now clears whatever that is on screen. Check the edit menu for clear.
+                        \n *Error Log is now added
+                        \n Clear Function now identifies and confirms whether you want to delete the text.""")
+
+
 def font_Ink():
     pad.config(font=('Ink Free', 12))
     pad.pack()
 
 
 def clear():
-    pad.delete(1.0, END)
+    if len(pad.get('1.0', END + '-1c')) > 0:
+        if messagebox.askyesno("Memopad", "Are you sure you want to clear the pad?"):
+            pad.delete(0.0, END)
+        else:
+            messagebox.showinfo(title="OKay",message= "Okey dokey, not gonna delete it!")
 
 
 def Helvet():
@@ -188,5 +195,5 @@ fontmenu.add_command(label='Helvetica', command=Helvet)
 fontmenu.add_command(label='TIMES', command=Times)
 
 pad.pack()
-print ("**** ERROR LOG ****")
+print("**** ERROR LOG ****")
 editor.mainloop()
