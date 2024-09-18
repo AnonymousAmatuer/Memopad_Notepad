@@ -22,7 +22,7 @@
 # Updates
 <p> Version 5.5 Memopad Released, Check it now! </p>
 <p> <b> More fonts- More FUN!!, Check it out now! </b> </p>
-<p> I recommend using <b> Version 5.5 </b> as this is better than the previous version Version 5 </p>
+<p> I recommend using <b> Version 6 </b> as this is better than the previous version Version 5 </p>
 <p> I now opened the discussions in github. Now you can tell your experince with it there. You can also tell all the bugs you faced </p>
 <p> I also added codeql workflow. </p>
 <p> Plus, I added a wiki where I explain my notepad. Just check it. I will be adding a lot of other things.
